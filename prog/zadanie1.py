@@ -15,6 +15,7 @@ def collection_converter(type):
 type_input = input("Введите тип коллекции ('list' или 'tuple'): ")
 numbers_input = input("Введите список целых чисел, записанных через пробел: ")
 
-converter = collection_converter(type_input)
-result = converter(numbers_input)
-print(result)
+if __name__ == "__main__":
+    converter = collection_converter(type_input)
+    result = converter(numbers_input)
+    print(result)
